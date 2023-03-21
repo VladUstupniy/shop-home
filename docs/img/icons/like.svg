@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #43484d;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="like.svg" class="cls-1" d="M1307.5,20a4.5,4.5,0,0,1-7,0,4.5,4.5,0,0,0-4.5,4.5c0,6,7,10,8,10.5,1-.5,8-4.5,8-10.5a4.5,4.5,0,0,0-4.5-4.5h0Z" transform="translate(-1296 -20)"/>
+</svg>
