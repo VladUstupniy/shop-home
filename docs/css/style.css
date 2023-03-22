@@ -487,12 +487,41 @@ input[type=search]::-webkit-search-results-decoration {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+.prev::after, .next::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  left: 50%;
+  top: 50%;
+}
+
 .prev {
   left: 30px;
+}
+.prev::after {
+  border-top: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid #fff;
+  border-left: 3px solid #fff;
+  -webkit-transform: translate(-25%, -50%) rotate(45deg);
+      -ms-transform: translate(-25%, -50%) rotate(45deg);
+          transform: translate(-25%, -50%) rotate(45deg);
 }
 
 .next {
   right: 30px;
+}
+.next::after {
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid transparent;
+  border-left: 3px solid transparent;
+  -webkit-transform: translate(-75%, -50%) rotate(45deg);
+      -ms-transform: translate(-75%, -50%) rotate(45deg);
+          transform: translate(-75%, -50%) rotate(45deg);
 }
 
 .none {
