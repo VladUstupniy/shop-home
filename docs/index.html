@@ -6,7 +6,7 @@
 	<!-- Отображение на устройствах -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- maximum-scale=1.0, user-scalable=1.0 -->
 	<!-- Заголовок страницы -->
-	<title>title</title>
+	<title>Shop Home</title>
 	<!-- Файл со стилями -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -85,14 +85,42 @@
 		<main class="main">
 			<div class="container">
 				<div class="main__slider slider--big">
-					<div class="big-slide">
+					<div class="big-slide fade">
 						<h2 class="slider__subtitle">free shipping</h2>
 						<h1 class="slider__title">a new beautiful summer look</h1>
-						<button class="slider__btn">shop now</button>
+						<button class="slider__btn"><span>shop now</span></button>
+					</div>
+					<div class="big-slide fade">
+						<h2 class="slider__subtitle">free shipping</h2>
+						<h1 class="slider__title">a new beautiful summer look</h1>
+						<button class="slider__btn"><span>shop now</span></button>
+					</div>
+					<div class="big-slide fade">
+						<h2 class="slider__subtitle">free shipping</h2>
+						<h1 class="slider__title">a new beautiful summer look</h1>
+						<button class="slider__btn"><span>shop now</span></button>
+					</div>
+					<div class="big-slide fade">
+						<h2 class="slider__subtitle">free shipping</h2>
+						<h1 class="slider__title">a new beautiful summer look</h1>
+						<button class="slider__btn"><span>shop now</span></button>
+					</div>
+					<div class="big-slide fade">
+						<h2 class="slider__subtitle">free shipping</h2>
+						<h1 class="slider__title">a new beautiful summer look</h1>
+						<button class="slider__btn"><span>shop now</span></button>
 					</div>
 
-					<a href="#" class="prev"><img src=""></a>
-					<a href="#" class="next"><img src=""></a>
+					<a href="#" class="prev" onclick="plusSlides(-1)"><img src=""></a>
+					<a href="#" class="next" onclick="plusSlides(1)"><img src=""></a>
+
+						<div class="slider__dots">
+							<span class="dot" onclick="currentSlide(1)"></span>
+							<span class="dot" onclick="currentSlide(2)"></span>
+							<span class="dot" onclick="currentSlide(3)"></span>
+							<span class="dot" onclick="currentSlide(4)"></span>
+							<span class="dot" onclick="currentSlide(5)"></span>
+						</div>
 				</div>
 			</div>
 		</main>
@@ -110,6 +138,6 @@
     <!-- JS-плагины и библиотеки -->
     <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
     <!-- Мои файлы скриптов -->
-    <!-- <script src="js/script.js"></script> -->
+    <script src="js/slider.js"></script>
 </body>
 </html>

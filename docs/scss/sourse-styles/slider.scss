@@ -1,14 +1,15 @@
-/* .main__slider {
-
-} */
 .slider--big {
     position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 .big-slide {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
 
     padding: 70px 30px 15px;
 
@@ -48,18 +49,52 @@
     margin-bottom: 35px;
 }
 .slider__btn {
-    padding: 10px 47px;
+    position: relative;
     margin: 50px;
+    width: 160px;
+    height: 40px;
 
     border-radius: 5px;
     background-color: #62bf43;
 
     font-size: 15px;
-    color: #fefefe;
     line-height: 2;
     text-align: center;
     font-weight: 600;
     text-transform: capitalize;
+    transition: all .2s ease-out;
+    overflow: hidden;
+    span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+        color: #fefefe;
+        transition: all .2s ease-out;
+    }
+
+    &::after {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 0%;
+        height: 100%;
+        background-color: #ffffff;
+        transform: skew(-45deg);
+        top: 0;
+        left: -20px;
+        transition: all .2s ease-out;
+        z-index: 1;
+    }
+    &:hover {
+        &::after {
+            width: 130%;
+        }
+        span {
+            color: #62bf43;
+        }
+    }
 }
 .prev, .next {
     position: absolute;
@@ -68,6 +103,7 @@
     height: 50px;
     border-radius: 50%;
     border: 1px solid #8d958a;
+    transition: all .3s ease-out;
 
     top: 50%;
     transform: translateY(-50%);
@@ -81,6 +117,10 @@
         border-radius: 2px;
         left: 50%;
         top: 50%;
+    }
+
+    &:hover {
+        background-color: #8d958a;
     }
 }
 .prev {
@@ -102,4 +142,39 @@
         border-left: 3px solid transparent;
         transform: translate(-75%, -50%) rotate(45deg);
     }
+}
+.slider__dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dot {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.active, dot:hover {
+    background-color: #ffffff;
+}
+
+.fade {
+    animation: fade 1s;
+}
+@keyframes fade {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
 }
