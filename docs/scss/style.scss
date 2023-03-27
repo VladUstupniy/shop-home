@@ -26,7 +26,7 @@ body {
 @import "sourse-styles/null.scss";
 
 body {
-	
+	background-color: #edf1f2;
 }
 //-----[--/ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ/--]---------------------------------------------------------------------------------------------
 
@@ -63,10 +63,12 @@ body {
 
 //-----[---ОСНОВНОЙ БЛОК---]----------------------------------------------------------------------------------------------------------
 @import "sourse-styles/header.scss";
-@import "sourse-styles/burger.scss";
-
 @import "sourse-styles/slider.scss";
+@import "sourse-styles/daily.scss";
 
+
+@import "sourse-styles/burger.scss";
+@import "sourse-styles/universal.scss";
 //-----[--/ОСНОВНОЙ БЛОК/--]----------------------------------------------------------------------------------------------------------
 
 
