@@ -1,0 +1,29 @@
+.deal__card {
+    &::after {
+        position: absolute;
+        display: block;
+        content: '27% off';
+        width: 64px;
+        height: 20px;
+        background-color: #f9ad0b;
+        border-radius: 10px;
+        top: 8%;
+        left: 8%;
+
+        font-size: 11px;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1.9;
+        font-weight: 500;
+    }
+}
+.deal__card:nth-child(2)::after {
+    content: '50% off';
+}
+.deal__card:nth-child(3)::after {
+    content: '40% off';
+}
+.deal__card:nth-child(4)::after {
+    content: '75% off';
+}

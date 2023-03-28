@@ -63,8 +63,10 @@ body {
 
 //-----[---ОСНОВНОЙ БЛОК---]----------------------------------------------------------------------------------------------------------
 @import "sourse-styles/header.scss";
+@import "sourse-styles/main.scss";
 @import "sourse-styles/slider.scss";
-@import "sourse-styles/daily.scss";
+@import "sourse-styles/deal.scss";
+@import "sourse-styles/product.scss";
 
 
 @import "sourse-styles/burger.scss";

@@ -1,21 +1,21 @@
-.main__daily {
+.main__item {
     background-color: #fff;
     border-radius: 5px;
 }
-.daily__head {
+.main__head {
     padding: 20px 30px 20px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border: 1px solid #dde2e6;
 }
-.daily__title {
+.main__title {
     font-size: 24px;
     color: #202326;
     font-weight: 300;
     text-transform: capitalize;
 }
-.daily__link {
+.main__link {
     position: relative;
     font-size: 13px;
     color: #2a96d4;
@@ -38,59 +38,35 @@
         }
     }
 }
-.daily__body {
+.main__body {
     display: flex;
     margin-top: -1px;
 }
-.daily__card {
+.main__card {
     position: relative;
-    padding: 25px 40px 30px 40px;
+    padding: 25px 54px 30px 54px;
     border: 1px solid #dde2e6;
     border-right: none;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     width: 25%;
     &:last-child {
         border-right: 1px solid #dde2e6;
     }
-    &::after {
-        position: absolute;
-        display: block;
-        content: '27% off';
-        width: 64px;
-        height: 20px;
-        background-color: #f9ad0b;
-        border-radius: 10px;
-        top: 8%;
-        left: 8%;
-
-        font-size: 11px;
-        color: #ffffff;
-        text-transform: uppercase;
-        text-align: center;
-        line-height: 1.9;
-        font-weight: 500;
-    }
 }
-.daily__card:nth-child(2)::after {
-    content: '50% off';
-}
-.daily__card:nth-child(3)::after {
-    content: '40% off';
-}
-.daily__card:nth-child(4)::after {
-    content: '75% off';
-}
-.daily__img {
+.main__img {
     margin-bottom: 25px;
     img {
         display: block;
         width: 100%;
-        height: auto;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
     }
 }
-.daily__text {
+.main__text {
     font-size: 16px;
     color: #202326;
     line-height: 1.625;
@@ -98,17 +74,17 @@
     font-weight: 600;
     margin-bottom: 25px;
 }
-.daily__price {
+.main__price {
     font-size: 14px;
     line-height: 1.857;
     text-align: center;
     font-weight: 600;
 }
-.daily__price--old {
+.main__price--old {
     color: #a3a9ad;
     text-decoration: line-through;
     margin-right: 10px;
 }
-.daily__price--new {
+.main__price--new {
     color: #202326;
 }

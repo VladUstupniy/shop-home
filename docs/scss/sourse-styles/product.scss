@@ -1,0 +1,24 @@
+.product__card:nth-child(4) {
+    position: relative;
+    &::after {
+        position: absolute;
+        display: block;
+        content: 'almost gone';
+        width: 97px;
+        height: 20px;
+        background-color: #ee320c;
+        border-radius: 10px;
+        top: 8%;
+        left: 8%;
+
+        font-size: 11px;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1.9;
+        font-weight: 500;
+    }
+    .product__img {
+        height: 100%;
+    }
+}
