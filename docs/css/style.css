@@ -530,6 +530,12 @@ body {
   color: #202326;
 }
 
+.main__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .slider--big {
   position: relative;
   display: -webkit-box;
