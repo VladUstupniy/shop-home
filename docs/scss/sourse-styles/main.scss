@@ -1,13 +1,14 @@
 .main__item {
     background-color: #fff;
     border-radius: 5px;
+    border: 1px solid #dde2e6;
 }
 .main__head {
     padding: 20px 30px 20px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #dde2e6;
+    border-bottom: 1px solid #dde2e6;
 }
 .main__title {
     font-size: 24px;
@@ -45,19 +46,17 @@
 .main__card {
     position: relative;
     padding: 25px 54px 30px 54px;
-    border: 1px solid #dde2e6;
-    border-right: none;
+    border-right: 1px solid #dde2e6;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     width: 25%;
     &:last-child {
-        border-right: 1px solid #dde2e6;
+        border-right: none;
     }
 }
 .main__img {
-    margin-bottom: 25px;
     img {
         display: block;
         width: 100%;
@@ -88,6 +87,45 @@
 .main__price--new {
     color: #202326;
 }
+.main__minicards {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main__minicard {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    padding: 25px;
+    border-right: none;
+    &:nth-child(1) {
+        border: 1px solid #dde2e6;
+        border-right: none;
+        border-top: none;
+    }
+    &:nth-child(2) {
+        border: 1px solid #dde2e6;
+        border-right: none;
+        border-top: none;
+    }
+    &:nth-child(3) {
+        border: 1px solid #dde2e6;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+    }
+    &:nth-child(4) {
+        border: 1px solid #dde2e6;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+    }
+}
 .main__desc {
     display: flex;
+    flex-direction: column;
+    align-items: start;
 }

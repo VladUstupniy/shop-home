@@ -1,0 +1,16 @@
+.electronic__text {
+    text-align: left;
+}
+.electronic__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    width: 170px;
+    height: 80px;
+    margin-right: 20px;
+    img {
+        width: auto;
+        height: auto;
+    }
+}
