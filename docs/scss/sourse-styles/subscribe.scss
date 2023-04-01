@@ -3,3 +3,57 @@
     background-color: #fff;
     text-align: center;
 }
+.subscribe__title {
+    font-size: 24px;
+    color: #202326;
+    line-height: 1.083;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.subscribe__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subscribe__input {
+    position: relative;
+    display: block;
+
+    background-image: url('../../img/icons/icon-input.svg');
+    background-repeat: no-repeat;
+    background-size: 16px 35px;
+    background-position: 14px -1px;
+
+    border: 1px solid #dde2e6;
+    border-radius: 5px;
+
+    width: 340px;
+    height: 35px;
+
+    padding-left: 40px;
+    margin-right: 10px;
+
+    font-size: 13px;
+    color: #a3a9ad;
+    line-height: 2;
+
+    &::placeholder {
+        font-size: 13px;
+        color: #a3a9ad;
+        line-height: 2;
+    }
+}
+.subscribe__btn {
+    background-color: #2a96d4;
+    border-radius: 5px;
+
+    width: 160px;
+    height: 35px;
+
+    font-size: 13px;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 2;
+    font-weight: 600;
+    text-align: center;
+}
