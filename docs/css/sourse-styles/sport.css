@@ -1,0 +1,14 @@
+.sport .mini-slide {
+  background-image: url("../img/sport/sport-01.jpg");
+  background-position: right 0px;
+  background-size: contain;
+}
+
+.sport .slider__subtitle {
+  background-color: #6e747a;
+  width: 60px;
+}
+
+.miniactive--4, .minidot--4:hover {
+  background-color: #6e747a;
+}
